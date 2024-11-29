@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiHangman", "MauiHangman.csproj", "{882C438A-4C3C-4A52-B16A-45DEB5111D63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{882C438A-4C3C-4A52-B16A-45DEB5111D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882C438A-4C3C-4A52-B16A-45DEB5111D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882C438A-4C3C-4A52-B16A-45DEB5111D63}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{882C438A-4C3C-4A52-B16A-45DEB5111D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882C438A-4C3C-4A52-B16A-45DEB5111D63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{882C438A-4C3C-4A52-B16A-45DEB5111D63}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD0EB833-C52C-4CA1-BC07-2070DF746E3C}
+	EndGlobalSection
+EndGlobal

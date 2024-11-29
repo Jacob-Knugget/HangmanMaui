@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiHangman.MainPage">
+
+    <StackLayout Padding="20">
+        <!-- Title -->
+        <Label Text="Hangman Game" FontSize="32" HorizontalOptions="Center"/>
+
+        <!-- Hangman Image (will change based on incorrect guesses) -->
+        <Image x:Name="HangmanImage" HeightRequest="200" HorizontalOptions="Center" />
+
+        <!-- Display Current Word -->
+        <Label x:Name="WordDisplay" FontSize="28" HorizontalOptions="Center"/>
+
+        <!-- Display Remaining Attempts -->
+        <Label x:Name="AttemptsLabel" Text="Attempts left: 6" FontSize="18" HorizontalOptions="Center"/>
+
+        <!-- Display Used Letters -->
+        <Label Text="Guessed Letters" FontSize="18" HorizontalOptions="Center"/>
+        <Label x:Name="GuessedLettersLabel" FontSize="18" HorizontalOptions="Center"/>
+
+        <!-- Keyboard for guessing letters -->
+        <FlexLayout x:Name="LetterGrid" Wrap="Wrap" JustifyContent="Center" Padding="10">
+            <!-- Generate Buttons A to Z -->
+            <Button Text="A" Clicked="LetterButton_Clicked"/>
+            <Button Text="B" Clicked="LetterButton_Clicked"/>
+            <Button Text="C" Clicked="LetterButton_Clicked"/>
+            <Button Text="D" Clicked="LetterButton_Clicked"/>
+            <Button Text="E" Clicked="LetterButton_Clicked"/>
+            <Button Text="F" Clicked="LetterButton_Clicked"/>
+            <Button Text="G" Clicked="LetterButton_Clicked"/>
+            <Button Text="H" Clicked="LetterButton_Clicked"/>
+            <Button Text="I" Clicked="LetterButton_Clicked"/>
+            <Button Text="J" Clicked="LetterButton_Clicked"/>
+            <Button Text="K" Clicked="LetterButton_Clicked"/>
+            <Button Text="L" Clicked="LetterButton_Clicked"/>
+            <Button Text="M" Clicked="LetterButton_Clicked"/>
+            <Button Text="N" Clicked="LetterButton_Clicked"/>
+            <Button Text="O" Clicked="LetterButton_Clicked"/>
+            <Button Text="P" Clicked="LetterButton_Clicked"/>
+            <Button Text="Q" Clicked="LetterButton_Clicked"/>
+            <Button Text="R" Clicked="LetterButton_Clicked"/>
+            <Button Text="S" Clicked="LetterButton_Clicked"/>
+            <Button Text="T" Clicked="LetterButton_Clicked"/>
+            <Button Text="U" Clicked="LetterButton_Clicked"/>
+            <Button Text="V" Clicked="LetterButton_Clicked"/>
+            <Button Text="W" Clicked="LetterButton_Clicked"/>
+            <Button Text="X" Clicked="LetterButton_Clicked"/>
+            <Button Text="Y" Clicked="LetterButton_Clicked"/>
+            <Button Text="Z" Clicked="LetterButton_Clicked"/>
+        </FlexLayout>
+
+
+        <!-- Game Over Message -->
+        <Label x:Name="GameOverMessage" FontSize="24" HorizontalOptions="Center" IsVisible="False"></Label>
+        
+        <!-- Play Again Button (initially hidden) -->
+        <Button x:Name="PlayAgainButton" Text="Play Again" IsVisible="False" Clicked="PlayAgainButton_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
